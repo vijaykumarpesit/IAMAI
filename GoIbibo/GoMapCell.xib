@@ -16,29 +16,29 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4eR-Gu-rtO">
-                        <rect key="frame" x="8" y="0.0" width="304" height="38"/>
+                        <rect key="frame" x="8" y="0.0" width="304" height="33"/>
                         <color key="backgroundColor" red="0.39215686274509803" green="0.69411764705882351" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lKK-vg-iAe">
-                        <rect key="frame" x="8" y="38" width="304" height="33.5"/>
+                        <rect key="frame" x="8" y="33" width="304" height="38.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </mapView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNp-nx-6nd">
-                        <rect key="frame" x="38" y="5" width="49" height="24"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <rect key="frame" x="38" y="5" width="39.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maM-zG-UYC">
-                        <rect key="frame" x="241" y="5" width="49" height="24"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <rect key="frame" x="250" y="5" width="39.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="lKK-vg-iAe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="30" id="57H-Gk-Y7R"/>
+                    <constraint firstItem="lKK-vg-iAe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="25" id="57H-Gk-Y7R"/>
                     <constraint firstAttribute="trailing" secondItem="maM-zG-UYC" secondAttribute="trailing" constant="30" id="CGJ-Rl-VSw"/>
                     <constraint firstItem="yNp-nx-6nd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="30" id="FXG-Bw-Q54"/>
                     <constraint firstItem="lKK-vg-iAe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Hht-xA-vZb"/>

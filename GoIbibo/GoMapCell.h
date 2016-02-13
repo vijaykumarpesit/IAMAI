@@ -14,5 +14,5 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *optionValueLabel;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
-
+@property (nonatomic, strong) CLLocation *location;
 @end

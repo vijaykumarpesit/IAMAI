@@ -48,6 +48,8 @@
 		B151F6861BB335750017D908 /* GoSeatMetrixViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B151F6851BB335750017D908 /* GoSeatMetrixViewController.xib */; };
 		B191BED31BB3501500838839 /* GoPaymentConfirmation.m in Sources */ = {isa = PBXBuildFile; fileRef = B191BED11BB3501500838839 /* GoPaymentConfirmation.m */; };
 		B191BED41BB3501500838839 /* GoPaymentConfirmation.xib in Resources */ = {isa = PBXBuildFile; fileRef = B191BED21BB3501500838839 /* GoPaymentConfirmation.xib */; };
+		B1CC9A0C1C6F4184000182DD /* GOLocationPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CC9A0A1C6F4184000182DD /* GOLocationPickerViewController.m */; };
+		B1CC9A0D1C6F4184000182DD /* GOLocationPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1CC9A0B1C6F4184000182DD /* GOLocationPickerViewController.xib */; };
 		B1E2440C1BB40A1700878E7A /* buddycopy.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E2440B1BB40A1700878E7A /* buddycopy.png */; };
 		B1EA1FC91BB276EB00A6B580 /* GoBusDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EA1FC81BB276EB00A6B580 /* GoBusDetails.m */; };
 		B1EA1FCD1BB2AA9E00A6B580 /* GoBusInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EA1FCB1BB2AA9E00A6B580 /* GoBusInfoCell.m */; };
@@ -139,6 +141,9 @@
 		B191BED01BB3501500838839 /* GoPaymentConfirmation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoPaymentConfirmation.h; sourceTree = "<group>"; };
 		B191BED11BB3501500838839 /* GoPaymentConfirmation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoPaymentConfirmation.m; sourceTree = "<group>"; };
 		B191BED21BB3501500838839 /* GoPaymentConfirmation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoPaymentConfirmation.xib; sourceTree = "<group>"; };
+		B1CC9A091C6F4184000182DD /* GOLocationPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOLocationPickerViewController.h; sourceTree = "<group>"; };
+		B1CC9A0A1C6F4184000182DD /* GOLocationPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOLocationPickerViewController.m; sourceTree = "<group>"; };
+		B1CC9A0B1C6F4184000182DD /* GOLocationPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GOLocationPickerViewController.xib; sourceTree = "<group>"; };
 		B1E2440B1BB40A1700878E7A /* buddycopy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buddycopy.png; sourceTree = "<group>"; };
 		B1EA1FC71BB276EB00A6B580 /* GoBusDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoBusDetails.h; sourceTree = "<group>"; };
 		B1EA1FC81BB276EB00A6B580 /* GoBusDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoBusDetails.m; sourceTree = "<group>"; };
@@ -320,6 +325,9 @@
 				54C4B2001BB3C09500110592 /* GoSearchPlaceViewController.h */,
 				54C4B2011BB3C09500110592 /* GoSearchPlaceViewController.m */,
 				54C4B2021BB3C09500110592 /* GoSearchPlaceViewController.xib */,
+				B1CC9A091C6F4184000182DD /* GOLocationPickerViewController.h */,
+				B1CC9A0A1C6F4184000182DD /* GOLocationPickerViewController.m */,
+				B1CC9A0B1C6F4184000182DD /* GOLocationPickerViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -478,6 +486,7 @@
 				54A550F91BB160370000561B /* IconProfile@2x.png in Resources */,
 				546DE98A1BB6B999005E5A8F /* GoSeatSeletionHeaderView.xib in Resources */,
 				B191BED41BB3501500838839 /* GoPaymentConfirmation.xib in Resources */,
+				B1CC9A0D1C6F4184000182DD /* GOLocationPickerViewController.xib in Resources */,
 				5427F3261BB28AB900410622 /* SrcDest.png in Resources */,
 				B1EDDEF31BB1118200518E0C /* DigitsKitResources.bundle in Resources */,
 				54A550FA1BB160370000561B /* IconSettings@2x.png in Resources */,
@@ -593,6 +602,7 @@
 				B1EA1FCD1BB2AA9E00A6B580 /* GoBusInfoCell.m in Sources */,
 				546DE98D1BB6BC45005E5A8F /* GoSeatSeletionHeaderView.m in Sources */,
 				B1EDDEF81BB14C9D00518E0C /* GoContactSync.m in Sources */,
+				B1CC9A0C1C6F4184000182DD /* GOLocationPickerViewController.m in Sources */,
 				B10D989E1BB24E97005D74D1 /* GoBusListViewController.m in Sources */,
 				B1EDDEE81BB10C6400518E0C /* RESideMenu.m in Sources */,
 				B1EDDEE71BB10C6400518E0C /* RECommonFunctions.m in Sources */,

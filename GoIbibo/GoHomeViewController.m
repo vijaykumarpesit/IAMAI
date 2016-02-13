@@ -14,6 +14,10 @@
 #import "GoSearchPlaceViewController.h"
 #import "GoIbibo-swift.h"
 #import "GoMapCell.h"
+#import "LocationPickerView.h"
+#import "GOLocationPickerViewController.h"
+#import "LocationPickerView.h"
+
 
 @interface GoHomeViewController () <MKMapViewDelegate,CLLocationManagerDelegate>
 
@@ -29,7 +33,9 @@
 @property (weak, nonatomic) IBOutlet IGSwitch *typeSelectionSwitch;
 @property (weak, nonatomic) IBOutlet UITableView *optionTableView;
 @property (strong, nonatomic) CLLocationManager *locationManager;
+@property (nonatomic, assign) BOOL isInLongTripMode;
 
+@property (weak, nonatomic) IBOutlet UIView *buttonsView;
 
 @end
 
@@ -38,6 +44,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Search Bus";
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    [self.locationManager requestAlwaysAuthorization];
+    
     self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"left-side-bar-hamburger.png"] landscapeImagePhone:nil style:UIBarButtonItemStylePlain target:self action:@selector(leftBarButtonItemPressed:)];
     _calendarManager = [JTCalendarManager new];
@@ -67,18 +77,21 @@
     [self didChangeModeTouch];
     
     
-    self.locationManager = [[CLLocationManager alloc] init];
-    self.locationManager.delegate = self;
-    [self.locationManager requestAlwaysAuthorization];
     
     self.typeSelectionSwitch.titleLeft = @"Long Journey";
     self.typeSelectionSwitch.titleRight = @"Short Journey";
     self.typeSelectionSwitch.cornerRadius = 0.0f;
-    self.typeSelectionSwitch.font = [UIFont fontWithName:@"HelveticaNeue" size:20];
+    self.typeSelectionSwitch.font = [UIFont fontWithName:@"HelveticaNeue" size:18];
     self.typeSelectionSwitch.sliderColor = [UIColor colorWithRed:100/255.0 green:177/255.0 blue:185/255.0 alpha:1.0];
     self.typeSelectionSwitch.textColorFront = [UIColor whiteColor];
-    self.typeSelectionSwitch.textColorBack = [UIColor blackColor];
+    self.typeSelectionSwitch.textColorBack = [UIColor whiteColor];
+    
+}
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    //[self.typeSelectionSwitch setFrame:CGRectMake(20, self.typeSelectionSwitch.frame.origin.y, self.view.bounds.size.width - 40, 40)];
+    
 }
 
 - (void)configureAndAddTapGestureToView:(UIView *)view andSelector:(SEL)selector {
@@ -339,27 +352,72 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return  150.0f;
+    return  (tableView.bounds.size.height -20)/2;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     GoMapCell *mapCell = [tableView dequeueReusableCellWithIdentifier:@"cellID" forIndexPath:indexPath];
-    
-    
-    //Takes a center point and a span in miles (converted from meters using above method)
+    MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
     MKCoordinateRegion region = { {0.0, 0.0 }, { 0.0, 0.0 } };
-    region.center.latitude = 22.569722 ;
-    region.center.longitude = 88.369722;
-    region.span.longitudeDelta = 0.01f;
-    region.span.latitudeDelta = 0.01f;
+    
+    
+    if (indexPath.section == 0) {
+        mapCell.optionLabel.text = @"Source";
+        region.center.latitude = self.locationManager.location.coordinate.latitude;
+        region.center.longitude = self.locationManager.location.coordinate.longitude;
+        region.span.longitudeDelta = 0.05f;
+        region.span.latitudeDelta = 0.05f;
+        CLLocation *theLocation = [[CLLocation alloc]initWithLatitude:region.center.latitude longitude:region.center.longitude];
+        [point setCoordinate:(theLocation.coordinate)];
+        [mapCell setLocation:theLocation];
+    } else {
+        mapCell.optionLabel.text = @"Destination";
+        region.center.latitude = 14.6195 ;
+        region.center.longitude = 74.8354;
+        region.span.longitudeDelta = 0.05f;
+        region.span.latitudeDelta = 0.05f;
+        CLLocation *theLocation = [[CLLocation alloc]initWithLatitude:region.center.latitude longitude:region.center.longitude];
+        [point setCoordinate:(theLocation.coordinate)];
+        [mapCell setLocation:theLocation];
+
+    }
+    
+    
+    
+    [mapCell.mapView addAnnotation:point];
+    
     [mapCell.mapView setMapType:MKMapTypeStandard];
     [mapCell.mapView setZoomEnabled:YES];
     [mapCell.mapView setScrollEnabled:YES];
     [mapCell.mapView setRegion:region animated:YES];
     [mapCell.mapView setScrollEnabled:NO];
-    [mapCell setNeedsDisplay];
     return mapCell;
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+//    GoMapCell *mapCell = (GoMapCell *)[tableView cellForRowAtIndexPath:indexPath];
+//    CLPlacemark  *placeMark = [[CLPlacemark alloc] init];
+//    MKCoordinateRegion region = { {0.0, 0.0 }, { 0.0, 0.0 } };
+//    region.center.latitude = mapCell.location.coordinate.latitude;
+//    region.center.longitude = mapCell.location.coordinate.longitude;
+//    region.span.longitudeDelta = 0.05f;
+//    region.span.latitudeDelta = 0.05f;
+//    
+    GOLocationPickerViewController *pickerVC = [[GOLocationPickerViewController alloc] initWithNibName:@"GOLocationPickerViewController" bundle:[NSBundle mainBundle]];
+    [self.navigationController pushViewController:pickerVC animated:YES];
+
+}
+
+- (void)locationManager:(CLLocationManager *)manager
+    didUpdateToLocation:(CLLocation *)newLocation
+           fromLocation:(CLLocation *)oldLocation {
+    
+    [self.locationManager stopUpdatingLocation];
+    [self.optionTableView reloadData];
+
 }
 
 

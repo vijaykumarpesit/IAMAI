@@ -13,6 +13,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     [self.mapView setDelegate:self];
+
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -32,10 +33,8 @@
         
         pinView.pinColor = MKPinAnnotationColorRed;
         pinView.canShowCallout = YES;
-        pinView.animatesDrop = YES;
     }
     else {
-        [mapView.userLocation setTitle:@"I am here"];
     }
     return pinView;
 }
