@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9046" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GoSeatMetrixViewController">
+            <connections>
+                <outlet property="collectionView" destination="n2f-nu-Fwa" id="nb5-gP-abb"/>
+                <outlet property="searchingView" destination="pi9-ew-jgQ" id="uti-Os-GcD"/>
+                <outlet property="view" destination="iN0-l3-epB" id="eog-mz-91J"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_1042.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="Crn-3j-8Ah">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <animations/>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="n2f-nu-Fwa">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="Vkt-cj-Baf">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="jJJ-XS-Smx"/>
+                        <outlet property="delegate" destination="-1" id="8fe-Zn-hCE"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pi9-ew-jgQ" userLabel="SeacrhingView">
+                    <rect key="frame" x="219" y="271.5" width="162.5" height="57"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="35a-oX-jgR">
+                            <rect key="frame" x="0.0" y="10" width="37" height="37"/>
+                            <animations/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Searching...." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDE-fX-SZW">
+                            <rect key="frame" x="47" y="4" width="95.5" height="49"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="FDE-fX-SZW" firstAttribute="leading" secondItem="35a-oX-jgR" secondAttribute="trailing" constant="10" id="1Zc-eN-Igx"/>
+                        <constraint firstItem="35a-oX-jgR" firstAttribute="top" secondItem="pi9-ew-jgQ" secondAttribute="top" constant="10" id="7q3-9u-hoM"/>
+                        <constraint firstAttribute="trailing" secondItem="FDE-fX-SZW" secondAttribute="trailing" constant="20" symbolic="YES" id="CZv-0j-Uef"/>
+                        <constraint firstAttribute="bottom" secondItem="35a-oX-jgR" secondAttribute="bottom" constant="10" id="hQB-iG-hCa"/>
+                        <constraint firstItem="FDE-fX-SZW" firstAttribute="top" secondItem="pi9-ew-jgQ" secondAttribute="top" constant="4" id="iWS-OQ-Tzb"/>
+                        <constraint firstItem="35a-oX-jgR" firstAttribute="leading" secondItem="pi9-ew-jgQ" secondAttribute="leading" id="tnO-AS-8ss"/>
+                        <constraint firstAttribute="bottom" secondItem="FDE-fX-SZW" secondAttribute="bottom" constant="4" id="xxY-uf-bEV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Crn-3j-8Ah" secondAttribute="bottom" id="Ahj-n7-HaJ"/>
+                <constraint firstItem="pi9-ew-jgQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Crk-oe-JfR"/>
+                <constraint firstAttribute="trailing" secondItem="Crn-3j-8Ah" secondAttribute="trailing" id="Kxf-bD-cNw"/>
+                <constraint firstAttribute="trailing" secondItem="n2f-nu-Fwa" secondAttribute="trailing" id="RpK-vc-lKI"/>
+                <constraint firstItem="pi9-ew-jgQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aZy-Dj-6oS"/>
+                <constraint firstItem="n2f-nu-Fwa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="h1a-UI-sub"/>
+                <constraint firstItem="pi9-ew-jgQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jos-vw-M11"/>
+                <constraint firstItem="n2f-nu-Fwa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jp4-Om-ubY"/>
+                <constraint firstAttribute="bottom" secondItem="n2f-nu-Fwa" secondAttribute="bottom" id="lH8-au-6UY"/>
+                <constraint firstItem="pi9-ew-jgQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="tFK-47-Lul"/>
+                <constraint firstItem="Crn-3j-8Ah" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="z05-DO-U4C"/>
+                <constraint firstItem="Crn-3j-8Ah" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zZf-iL-9yd"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="IMG_1042.PNG" width="640" height="1136"/>
+    </resources>
+</document>

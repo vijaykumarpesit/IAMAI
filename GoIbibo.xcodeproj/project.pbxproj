@@ -1,0 +1,717 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5427F3261BB28AB900410622 /* SrcDest.png in Resources */ = {isa = PBXBuildFile; fileRef = 5427F3251BB28AB900410622 /* SrcDest.png */; };
+		5458A8E51BB65F82008D9ED5 /* availableSeat.png in Resources */ = {isa = PBXBuildFile; fileRef = 5458A8E31BB65F82008D9ED5 /* availableSeat.png */; };
+		5458A8E61BB65F82008D9ED5 /* bookedSeat.png in Resources */ = {isa = PBXBuildFile; fileRef = 5458A8E41BB65F82008D9ED5 /* bookedSeat.png */; };
+		5458A8E81BB686AA008D9ED5 /* buddySeat.png in Resources */ = {isa = PBXBuildFile; fileRef = 5458A8E71BB686AA008D9ED5 /* buddySeat.png */; };
+		546DE9861BB6ACEE005E5A8F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 546DE9851BB6ACEE005E5A8F /* MBProgressHUD.m */; };
+		546DE9881BB6B6C9005E5A8F /* Checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 546DE9871BB6B6C9005E5A8F /* Checkmark@2x.png */; };
+		546DE98A1BB6B999005E5A8F /* GoSeatSeletionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546DE9891BB6B999005E5A8F /* GoSeatSeletionHeaderView.xib */; };
+		546DE98D1BB6BC45005E5A8F /* GoSeatSeletionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 546DE98C1BB6BC45005E5A8F /* GoSeatSeletionHeaderView.m */; };
+		547A05D21BB3DC260079F1CC /* background-blurred.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 547A05D11BB3DC260079F1CC /* background-blurred.jpg */; };
+		547A05D81BB3EF3F0079F1CC /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 547A05D71BB3EF3F0079F1CC /* background.png */; };
+		547A05DE1BB3FBB90079F1CC /* searchButtonBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 547A05DD1BB3FBB90079F1CC /* searchButtonBackground.png */; };
+		547A06281BB401F90079F1CC /* EndLocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 547A06261BB401F90079F1CC /* EndLocation.png */; };
+		547A06291BB401F90079F1CC /* StartLocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 547A06271BB401F90079F1CC /* StartLocation.png */; };
+		547A06391BB41C7F0079F1CC /* Teal Collaboration Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 547A06381BB41C7F0079F1CC /* Teal Collaboration Icon.png */; };
+		54A550CB1BB138A60000561B /* left-side-bar-hamburger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54A550C91BB138A60000561B /* left-side-bar-hamburger@2x.png */; };
+		54A550CC1BB138A60000561B /* left-side-bar-hamburger@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54A550CA1BB138A60000561B /* left-side-bar-hamburger@3x.png */; };
+		54A550D51BB148480000561B /* GoSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A550D31BB148480000561B /* GoSettingsViewController.m */; };
+		54A550D61BB148480000561B /* GoSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54A550D41BB148480000561B /* GoSettingsViewController.xib */; };
+		54A550DC1BB14A570000561B /* GoLayoutHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A550DB1BB14A570000561B /* GoLayoutHandler.m */; };
+		54A550EC1BB154060000561B /* GoSettingsOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A550EB1BB154060000561B /* GoSettingsOption.m */; };
+		54A550F91BB160370000561B /* IconProfile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54A550F71BB160370000561B /* IconProfile@2x.png */; };
+		54A550FA1BB160370000561B /* IconSettings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54A550F81BB160370000561B /* IconSettings@2x.png */; };
+		54A8CD111BB315F70091B02A /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 54A8CD101BB315F70091B02A /* calendar.png */; };
+		54C4B2031BB3C09500110592 /* GoSearchPlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C4B2011BB3C09500110592 /* GoSearchPlaceViewController.m */; };
+		54C4B2041BB3C09500110592 /* GoSearchPlaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54C4B2021BB3C09500110592 /* GoSearchPlaceViewController.xib */; };
+		8AD3F0CA70A6BFBD52AFEC3D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29DF6E63E872EBD0B024D6DD /* libPods.a */; };
+		B10D989E1BB24E97005D74D1 /* GoBusListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B10D989C1BB24E97005D74D1 /* GoBusListViewController.m */; };
+		B10D989F1BB24E97005D74D1 /* GoBusListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B10D989D1BB24E97005D74D1 /* GoBusListViewController.xib */; };
+		B10ECC971BB33E7900B19D66 /* GoSeatCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B10ECC951BB33E7900B19D66 /* GoSeatCollectionViewCell.m */; };
+		B10ECC981BB33E7900B19D66 /* GoSeatCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B10ECC961BB33E7900B19D66 /* GoSeatCollectionViewCell.xib */; };
+		B10ECC9B1BB342F800B19D66 /* GoBusSeatLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B10ECC9A1BB342F800B19D66 /* GoBusSeatLayout.m */; };
+		B151F67B1BB31E360017D908 /* GoBookedBusDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = B151F67A1BB31E360017D908 /* GoBookedBusDetail.m */; };
+		B151F6811BB32D590017D908 /* contacts.plist in Resources */ = {isa = PBXBuildFile; fileRef = B151F6801BB32D590017D908 /* contacts.plist */; };
+		B151F6841BB3353B0017D908 /* GoSeatMetrixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B151F6831BB3353B0017D908 /* GoSeatMetrixViewController.m */; };
+		B151F6861BB335750017D908 /* GoSeatMetrixViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B151F6851BB335750017D908 /* GoSeatMetrixViewController.xib */; };
+		B191BED31BB3501500838839 /* GoPaymentConfirmation.m in Sources */ = {isa = PBXBuildFile; fileRef = B191BED11BB3501500838839 /* GoPaymentConfirmation.m */; };
+		B191BED41BB3501500838839 /* GoPaymentConfirmation.xib in Resources */ = {isa = PBXBuildFile; fileRef = B191BED21BB3501500838839 /* GoPaymentConfirmation.xib */; };
+		B1E2440C1BB40A1700878E7A /* buddycopy.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E2440B1BB40A1700878E7A /* buddycopy.png */; };
+		B1EA1FC91BB276EB00A6B580 /* GoBusDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EA1FC81BB276EB00A6B580 /* GoBusDetails.m */; };
+		B1EA1FCD1BB2AA9E00A6B580 /* GoBusInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EA1FCB1BB2AA9E00A6B580 /* GoBusInfoCell.m */; };
+		B1EA1FCE1BB2AA9E00A6B580 /* GoBusInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1EA1FCC1BB2AA9E00A6B580 /* GoBusInfoCell.xib */; };
+		B1EA1FD51BB2CE8E00A6B580 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EA1FD41BB2CE8E00A6B580 /* AudioToolbox.framework */; };
+		B1EA1FD71BB2CE9A00A6B580 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EA1FD61BB2CE9A00A6B580 /* CFNetwork.framework */; };
+		B1EA1FD91BB2CEA600A6B580 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EA1FD81BB2CEA600A6B580 /* CoreGraphics.framework */; };
+		B1EA1FDB1BB2CEB200A6B580 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EA1FDA1BB2CEB200A6B580 /* CoreLocation.framework */; };
+		B1EA1FDD1BB2CEB800A6B580 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EA1FDC1BB2CEB800A6B580 /* QuartzCore.framework */; };
+		B1EA1FDF1BB2CEC200A6B580 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EA1FDE1BB2CEC200A6B580 /* Security.framework */; };
+		B1EA1FE11BB2CEC700A6B580 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EA1FE01BB2CEC700A6B580 /* StoreKit.framework */; };
+		B1EA1FE31BB2CED300A6B580 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EA1FE21BB2CED300A6B580 /* SystemConfiguration.framework */; };
+		B1EA1FE51BB2CEEB00A6B580 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EA1FE41BB2CEEB00A6B580 /* libz.tbd */; };
+		B1EA1FE71BB2CEF400A6B580 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EA1FE61BB2CEF400A6B580 /* libsqlite3.tbd */; };
+		B1EA1FEB1BB2F00600A6B580 /* GoUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EA1FEA1BB2F00600A6B580 /* GoUser.m */; };
+		B1EA1FEE1BB2F1BA00A6B580 /* GoUserModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EA1FED1BB2F1BA00A6B580 /* GoUserModelManager.m */; };
+		B1EDDECB1BB10A4100518E0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EDDECA1BB10A4100518E0C /* main.m */; };
+		B1EDDECE1BB10A4100518E0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EDDECD1BB10A4100518E0C /* AppDelegate.m */; };
+		B1EDDED11BB10A4100518E0C /* GoHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EDDED01BB10A4100518E0C /* GoHomeViewController.m */; };
+		B1EDDED61BB10A4100518E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1EDDED51BB10A4100518E0C /* Assets.xcassets */; };
+		B1EDDED91BB10A4100518E0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1EDDED71BB10A4100518E0C /* LaunchScreen.storyboard */; };
+		B1EDDEE71BB10C6400518E0C /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EDDEE21BB10C6400518E0C /* RECommonFunctions.m */; };
+		B1EDDEE81BB10C6400518E0C /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EDDEE41BB10C6400518E0C /* RESideMenu.m */; };
+		B1EDDEE91BB10C6400518E0C /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EDDEE61BB10C6400518E0C /* UIViewController+RESideMenu.m */; };
+		B1EDDEEB1BB10D9A00518E0C /* GoHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1EDDEEA1BB10D9A00518E0C /* GoHomeViewController.xib */; };
+		B1EDDEF11BB1118200518E0C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EDDEED1BB1118200518E0C /* Fabric.framework */; };
+		B1EDDEF21BB1118200518E0C /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EDDEEE1BB1118200518E0C /* DigitsKit.framework */; };
+		B1EDDEF31BB1118200518E0C /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B1EDDEEF1BB1118200518E0C /* DigitsKitResources.bundle */; };
+		B1EDDEF41BB1118200518E0C /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EDDEF01BB1118200518E0C /* TwitterCore.framework */; };
+		B1EDDEF81BB14C9D00518E0C /* GoContactSync.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EDDEF71BB14C9D00518E0C /* GoContactSync.m */; };
+		B1EDDEFB1BB14CBE00518E0C /* GoContactSyncEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EDDEFA1BB14CBE00518E0C /* GoContactSyncEntry.m */; };
+		B1EE44C11BB6F77100B47C8F /* IMG_1042.PNG in Resources */ = {isa = PBXBuildFile; fileRef = B1EE44C01BB6F77100B47C8F /* IMG_1042.PNG */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29DF6E63E872EBD0B024D6DD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB25A0CFB6305D6FF431522 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		5427F3251BB28AB900410622 /* SrcDest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SrcDest.png; sourceTree = "<group>"; };
+		5458A8E31BB65F82008D9ED5 /* availableSeat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = availableSeat.png; sourceTree = "<group>"; };
+		5458A8E41BB65F82008D9ED5 /* bookedSeat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookedSeat.png; sourceTree = "<group>"; };
+		5458A8E71BB686AA008D9ED5 /* buddySeat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buddySeat.png; sourceTree = "<group>"; };
+		546DE9841BB6ACEE005E5A8F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		546DE9851BB6ACEE005E5A8F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		546DE9871BB6B6C9005E5A8F /* Checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checkmark@2x.png"; sourceTree = "<group>"; };
+		546DE9891BB6B999005E5A8F /* GoSeatSeletionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoSeatSeletionHeaderView.xib; sourceTree = "<group>"; };
+		546DE98B1BB6BC45005E5A8F /* GoSeatSeletionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoSeatSeletionHeaderView.h; sourceTree = "<group>"; };
+		546DE98C1BB6BC45005E5A8F /* GoSeatSeletionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoSeatSeletionHeaderView.m; sourceTree = "<group>"; };
+		547A05D11BB3DC260079F1CC /* background-blurred.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background-blurred.jpg"; sourceTree = "<group>"; };
+		547A05D71BB3EF3F0079F1CC /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		547A05DD1BB3FBB90079F1CC /* searchButtonBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchButtonBackground.png; sourceTree = "<group>"; };
+		547A06261BB401F90079F1CC /* EndLocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EndLocation.png; sourceTree = "<group>"; };
+		547A06271BB401F90079F1CC /* StartLocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartLocation.png; sourceTree = "<group>"; };
+		547A06381BB41C7F0079F1CC /* Teal Collaboration Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Teal Collaboration Icon.png"; sourceTree = "<group>"; };
+		54A550C91BB138A60000561B /* left-side-bar-hamburger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left-side-bar-hamburger@2x.png"; sourceTree = "<group>"; };
+		54A550CA1BB138A60000561B /* left-side-bar-hamburger@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left-side-bar-hamburger@3x.png"; sourceTree = "<group>"; };
+		54A550D21BB148480000561B /* GoSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoSettingsViewController.h; sourceTree = "<group>"; };
+		54A550D31BB148480000561B /* GoSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoSettingsViewController.m; sourceTree = "<group>"; };
+		54A550D41BB148480000561B /* GoSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoSettingsViewController.xib; sourceTree = "<group>"; };
+		54A550DA1BB14A570000561B /* GoLayoutHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoLayoutHandler.h; sourceTree = "<group>"; };
+		54A550DB1BB14A570000561B /* GoLayoutHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoLayoutHandler.m; sourceTree = "<group>"; };
+		54A550EA1BB154060000561B /* GoSettingsOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoSettingsOption.h; sourceTree = "<group>"; };
+		54A550EB1BB154060000561B /* GoSettingsOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoSettingsOption.m; sourceTree = "<group>"; };
+		54A550F71BB160370000561B /* IconProfile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconProfile@2x.png"; sourceTree = "<group>"; };
+		54A550F81BB160370000561B /* IconSettings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconSettings@2x.png"; sourceTree = "<group>"; };
+		54A8CD101BB315F70091B02A /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		54C4B2001BB3C09500110592 /* GoSearchPlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoSearchPlaceViewController.h; sourceTree = "<group>"; };
+		54C4B2011BB3C09500110592 /* GoSearchPlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoSearchPlaceViewController.m; sourceTree = "<group>"; };
+		54C4B2021BB3C09500110592 /* GoSearchPlaceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoSearchPlaceViewController.xib; sourceTree = "<group>"; };
+		B10D989B1BB24E97005D74D1 /* GoBusListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoBusListViewController.h; sourceTree = "<group>"; };
+		B10D989C1BB24E97005D74D1 /* GoBusListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoBusListViewController.m; sourceTree = "<group>"; };
+		B10D989D1BB24E97005D74D1 /* GoBusListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoBusListViewController.xib; sourceTree = "<group>"; };
+		B10ECC941BB33E7900B19D66 /* GoSeatCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoSeatCollectionViewCell.h; sourceTree = "<group>"; };
+		B10ECC951BB33E7900B19D66 /* GoSeatCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoSeatCollectionViewCell.m; sourceTree = "<group>"; };
+		B10ECC961BB33E7900B19D66 /* GoSeatCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoSeatCollectionViewCell.xib; sourceTree = "<group>"; };
+		B10ECC991BB342F800B19D66 /* GoBusSeatLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoBusSeatLayout.h; sourceTree = "<group>"; };
+		B10ECC9A1BB342F800B19D66 /* GoBusSeatLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoBusSeatLayout.m; sourceTree = "<group>"; };
+		B151F6791BB31E360017D908 /* GoBookedBusDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoBookedBusDetail.h; sourceTree = "<group>"; };
+		B151F67A1BB31E360017D908 /* GoBookedBusDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoBookedBusDetail.m; sourceTree = "<group>"; };
+		B151F6801BB32D590017D908 /* contacts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = contacts.plist; sourceTree = "<group>"; };
+		B151F6821BB3353B0017D908 /* GoSeatMetrixViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoSeatMetrixViewController.h; sourceTree = "<group>"; };
+		B151F6831BB3353B0017D908 /* GoSeatMetrixViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoSeatMetrixViewController.m; sourceTree = "<group>"; };
+		B151F6851BB335750017D908 /* GoSeatMetrixViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoSeatMetrixViewController.xib; sourceTree = "<group>"; };
+		B191BED01BB3501500838839 /* GoPaymentConfirmation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoPaymentConfirmation.h; sourceTree = "<group>"; };
+		B191BED11BB3501500838839 /* GoPaymentConfirmation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoPaymentConfirmation.m; sourceTree = "<group>"; };
+		B191BED21BB3501500838839 /* GoPaymentConfirmation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoPaymentConfirmation.xib; sourceTree = "<group>"; };
+		B1E2440B1BB40A1700878E7A /* buddycopy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buddycopy.png; sourceTree = "<group>"; };
+		B1EA1FC71BB276EB00A6B580 /* GoBusDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoBusDetails.h; sourceTree = "<group>"; };
+		B1EA1FC81BB276EB00A6B580 /* GoBusDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoBusDetails.m; sourceTree = "<group>"; };
+		B1EA1FCA1BB2AA9E00A6B580 /* GoBusInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoBusInfoCell.h; sourceTree = "<group>"; };
+		B1EA1FCB1BB2AA9E00A6B580 /* GoBusInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoBusInfoCell.m; sourceTree = "<group>"; };
+		B1EA1FCC1BB2AA9E00A6B580 /* GoBusInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoBusInfoCell.xib; sourceTree = "<group>"; };
+		B1EA1FD41BB2CE8E00A6B580 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B1EA1FD61BB2CE9A00A6B580 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B1EA1FD81BB2CEA600A6B580 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B1EA1FDA1BB2CEB200A6B580 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B1EA1FDC1BB2CEB800A6B580 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B1EA1FDE1BB2CEC200A6B580 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B1EA1FE01BB2CEC700A6B580 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B1EA1FE21BB2CED300A6B580 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B1EA1FE41BB2CEEB00A6B580 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B1EA1FE61BB2CEF400A6B580 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		B1EA1FE91BB2F00600A6B580 /* GoUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoUser.h; sourceTree = "<group>"; };
+		B1EA1FEA1BB2F00600A6B580 /* GoUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoUser.m; sourceTree = "<group>"; };
+		B1EA1FEC1BB2F1BA00A6B580 /* GoUserModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoUserModelManager.h; sourceTree = "<group>"; };
+		B1EA1FED1BB2F1BA00A6B580 /* GoUserModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoUserModelManager.m; sourceTree = "<group>"; };
+		B1EDDEC61BB10A4000518E0C /* GoIbibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoIbibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1EDDECA1BB10A4100518E0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B1EDDECC1BB10A4100518E0C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B1EDDECD1BB10A4100518E0C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B1EDDECF1BB10A4100518E0C /* GoHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoHomeViewController.h; sourceTree = "<group>"; };
+		B1EDDED01BB10A4100518E0C /* GoHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoHomeViewController.m; sourceTree = "<group>"; };
+		B1EDDED51BB10A4100518E0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1EDDED81BB10A4100518E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1EDDEDA1BB10A4100518E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1EDDEE11BB10C6400518E0C /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		B1EDDEE21BB10C6400518E0C /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		B1EDDEE31BB10C6400518E0C /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
+		B1EDDEE41BB10C6400518E0C /* RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenu.m; sourceTree = "<group>"; };
+		B1EDDEE51BB10C6400518E0C /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
+		B1EDDEE61BB10C6400518E0C /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
+		B1EDDEEA1BB10D9A00518E0C /* GoHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoHomeViewController.xib; sourceTree = "<group>"; };
+		B1EDDEED1BB1118200518E0C /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		B1EDDEEE1BB1118200518E0C /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitsKit.framework; sourceTree = SOURCE_ROOT; };
+		B1EDDEEF1BB1118200518E0C /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DigitsKitResources.bundle; path = DigitsKit.framework/Versions/A/Resources/DigitsKitResources.bundle; sourceTree = SOURCE_ROOT; };
+		B1EDDEF01BB1118200518E0C /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = SOURCE_ROOT; };
+		B1EDDEF61BB14C9D00518E0C /* GoContactSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoContactSync.h; path = ../GoContactSync.h; sourceTree = "<group>"; };
+		B1EDDEF71BB14C9D00518E0C /* GoContactSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoContactSync.m; path = ../GoContactSync.m; sourceTree = "<group>"; };
+		B1EDDEF91BB14CBE00518E0C /* GoContactSyncEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoContactSyncEntry.h; sourceTree = "<group>"; };
+		B1EDDEFA1BB14CBE00518E0C /* GoContactSyncEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoContactSyncEntry.m; sourceTree = "<group>"; };
+		B1EE44C01BB6F77100B47C8F /* IMG_1042.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1042.PNG; sourceTree = "<group>"; };
+		B40DDF3B0D3DBC6051BC67C8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1EDDEC31BB10A4000518E0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1EA1FE71BB2CEF400A6B580 /* libsqlite3.tbd in Frameworks */,
+				B1EA1FE51BB2CEEB00A6B580 /* libz.tbd in Frameworks */,
+				B1EA1FE31BB2CED300A6B580 /* SystemConfiguration.framework in Frameworks */,
+				B1EA1FE11BB2CEC700A6B580 /* StoreKit.framework in Frameworks */,
+				B1EA1FDF1BB2CEC200A6B580 /* Security.framework in Frameworks */,
+				B1EA1FDD1BB2CEB800A6B580 /* QuartzCore.framework in Frameworks */,
+				B1EA1FDB1BB2CEB200A6B580 /* CoreLocation.framework in Frameworks */,
+				B1EA1FD91BB2CEA600A6B580 /* CoreGraphics.framework in Frameworks */,
+				B1EA1FD71BB2CE9A00A6B580 /* CFNetwork.framework in Frameworks */,
+				B1EA1FD51BB2CE8E00A6B580 /* AudioToolbox.framework in Frameworks */,
+				B1EDDEF11BB1118200518E0C /* Fabric.framework in Frameworks */,
+				B1EDDEF41BB1118200518E0C /* TwitterCore.framework in Frameworks */,
+				B1EDDEF21BB1118200518E0C /* DigitsKit.framework in Frameworks */,
+				8AD3F0CA70A6BFBD52AFEC3D /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68BADB109A9B047185A2BEDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1EA1FE61BB2CEF400A6B580 /* libsqlite3.tbd */,
+				B1EA1FE41BB2CEEB00A6B580 /* libz.tbd */,
+				B1EA1FE21BB2CED300A6B580 /* SystemConfiguration.framework */,
+				B1EA1FE01BB2CEC700A6B580 /* StoreKit.framework */,
+				B1EA1FDE1BB2CEC200A6B580 /* Security.framework */,
+				B1EA1FDC1BB2CEB800A6B580 /* QuartzCore.framework */,
+				B1EA1FDA1BB2CEB200A6B580 /* CoreLocation.framework */,
+				B1EA1FD81BB2CEA600A6B580 /* CoreGraphics.framework */,
+				B1EA1FD61BB2CE9A00A6B580 /* CFNetwork.framework */,
+				B1EA1FD41BB2CE8E00A6B580 /* AudioToolbox.framework */,
+				29DF6E63E872EBD0B024D6DD /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C1B89E0C6CDCA4125109D79 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DB25A0CFB6305D6FF431522 /* Pods.debug.xcconfig */,
+				B40DDF3B0D3DBC6051BC67C8 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B1EA1FC61BB276CF00A6B580 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B1EA1FE91BB2F00600A6B580 /* GoUser.h */,
+				B1EA1FEA1BB2F00600A6B580 /* GoUser.m */,
+				B1EA1FC71BB276EB00A6B580 /* GoBusDetails.h */,
+				B1EA1FC81BB276EB00A6B580 /* GoBusDetails.m */,
+				B1EA1FEC1BB2F1BA00A6B580 /* GoUserModelManager.h */,
+				B1EA1FED1BB2F1BA00A6B580 /* GoUserModelManager.m */,
+				B151F6791BB31E360017D908 /* GoBookedBusDetail.h */,
+				B151F67A1BB31E360017D908 /* GoBookedBusDetail.m */,
+				B10ECC991BB342F800B19D66 /* GoBusSeatLayout.h */,
+				B10ECC9A1BB342F800B19D66 /* GoBusSeatLayout.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B1EA1FCF1BB2ACBB00A6B580 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B1EA1FCA1BB2AA9E00A6B580 /* GoBusInfoCell.h */,
+				B1EA1FCB1BB2AA9E00A6B580 /* GoBusInfoCell.m */,
+				B1EA1FCC1BB2AA9E00A6B580 /* GoBusInfoCell.xib */,
+				B10ECC941BB33E7900B19D66 /* GoSeatCollectionViewCell.h */,
+				B10ECC951BB33E7900B19D66 /* GoSeatCollectionViewCell.m */,
+				B10ECC961BB33E7900B19D66 /* GoSeatCollectionViewCell.xib */,
+				546DE9841BB6ACEE005E5A8F /* MBProgressHUD.h */,
+				546DE9851BB6ACEE005E5A8F /* MBProgressHUD.m */,
+				546DE9891BB6B999005E5A8F /* GoSeatSeletionHeaderView.xib */,
+				546DE98B1BB6BC45005E5A8F /* GoSeatSeletionHeaderView.h */,
+				546DE98C1BB6BC45005E5A8F /* GoSeatSeletionHeaderView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B1EA1FD01BB2ACDF00A6B580 /* Contact Sync */ = {
+			isa = PBXGroup;
+			children = (
+				B1EDDEF61BB14C9D00518E0C /* GoContactSync.h */,
+				B1EDDEF71BB14C9D00518E0C /* GoContactSync.m */,
+				B1EDDEF91BB14CBE00518E0C /* GoContactSyncEntry.h */,
+				B1EDDEFA1BB14CBE00518E0C /* GoContactSyncEntry.m */,
+			);
+			name = "Contact Sync";
+			sourceTree = "<group>";
+		};
+		B1EA1FD11BB2ACF500A6B580 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B1EDDECF1BB10A4100518E0C /* GoHomeViewController.h */,
+				B1EDDED01BB10A4100518E0C /* GoHomeViewController.m */,
+				B1EDDEEA1BB10D9A00518E0C /* GoHomeViewController.xib */,
+				54A550D21BB148480000561B /* GoSettingsViewController.h */,
+				54A550D31BB148480000561B /* GoSettingsViewController.m */,
+				54A550D41BB148480000561B /* GoSettingsViewController.xib */,
+				B10D989B1BB24E97005D74D1 /* GoBusListViewController.h */,
+				B10D989C1BB24E97005D74D1 /* GoBusListViewController.m */,
+				B10D989D1BB24E97005D74D1 /* GoBusListViewController.xib */,
+				B151F6821BB3353B0017D908 /* GoSeatMetrixViewController.h */,
+				B151F6831BB3353B0017D908 /* GoSeatMetrixViewController.m */,
+				B151F6851BB335750017D908 /* GoSeatMetrixViewController.xib */,
+				B191BED01BB3501500838839 /* GoPaymentConfirmation.h */,
+				B191BED11BB3501500838839 /* GoPaymentConfirmation.m */,
+				B191BED21BB3501500838839 /* GoPaymentConfirmation.xib */,
+				54C4B2001BB3C09500110592 /* GoSearchPlaceViewController.h */,
+				54C4B2011BB3C09500110592 /* GoSearchPlaceViewController.m */,
+				54C4B2021BB3C09500110592 /* GoSearchPlaceViewController.xib */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B1EDDEBD1BB10A4000518E0C = {
+			isa = PBXGroup;
+			children = (
+				B1EDDEC81BB10A4000518E0C /* GoIbibo */,
+				B1EDDEC71BB10A4000518E0C /* Products */,
+				9C1B89E0C6CDCA4125109D79 /* Pods */,
+				68BADB109A9B047185A2BEDA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B1EDDEC71BB10A4000518E0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1EDDEC61BB10A4000518E0C /* GoIbibo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1EDDEC81BB10A4000518E0C /* GoIbibo */ = {
+			isa = PBXGroup;
+			children = (
+				B1EA1FD11BB2ACF500A6B580 /* View Controllers */,
+				B1EA1FD01BB2ACDF00A6B580 /* Contact Sync */,
+				B1EA1FCF1BB2ACBB00A6B580 /* Views */,
+				B1EA1FC61BB276CF00A6B580 /* Model */,
+				B1EDDECC1BB10A4100518E0C /* AppDelegate.h */,
+				B1EDDECD1BB10A4100518E0C /* AppDelegate.m */,
+				54A550EA1BB154060000561B /* GoSettingsOption.h */,
+				54A550EB1BB154060000561B /* GoSettingsOption.m */,
+				54A550DA1BB14A570000561B /* GoLayoutHandler.h */,
+				54A550DB1BB14A570000561B /* GoLayoutHandler.m */,
+				B1EDDEED1BB1118200518E0C /* Fabric.framework */,
+				B1EDDEEE1BB1118200518E0C /* DigitsKit.framework */,
+				B1EDDEEF1BB1118200518E0C /* DigitsKitResources.bundle */,
+				B1EDDEF01BB1118200518E0C /* TwitterCore.framework */,
+				B1EDDEE01BB10C5200518E0C /* Side Menu */,
+				B1EDDED51BB10A4100518E0C /* Assets.xcassets */,
+				B1EDDED71BB10A4100518E0C /* LaunchScreen.storyboard */,
+				B1EDDEDA1BB10A4100518E0C /* Info.plist */,
+				B1EDDEC91BB10A4100518E0C /* Supporting Files */,
+				B151F6801BB32D590017D908 /* contacts.plist */,
+			);
+			path = GoIbibo;
+			sourceTree = "<group>";
+		};
+		B1EDDEC91BB10A4100518E0C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1EE44C01BB6F77100B47C8F /* IMG_1042.PNG */,
+				546DE9871BB6B6C9005E5A8F /* Checkmark@2x.png */,
+				5458A8E71BB686AA008D9ED5 /* buddySeat.png */,
+				5458A8E31BB65F82008D9ED5 /* availableSeat.png */,
+				5458A8E41BB65F82008D9ED5 /* bookedSeat.png */,
+				547A06381BB41C7F0079F1CC /* Teal Collaboration Icon.png */,
+				547A06261BB401F90079F1CC /* EndLocation.png */,
+				547A06271BB401F90079F1CC /* StartLocation.png */,
+				547A05DD1BB3FBB90079F1CC /* searchButtonBackground.png */,
+				547A05D71BB3EF3F0079F1CC /* background.png */,
+				547A05D11BB3DC260079F1CC /* background-blurred.jpg */,
+				54A8CD101BB315F70091B02A /* calendar.png */,
+				54A550F71BB160370000561B /* IconProfile@2x.png */,
+				5427F3251BB28AB900410622 /* SrcDest.png */,
+				54A550F81BB160370000561B /* IconSettings@2x.png */,
+				54A550C91BB138A60000561B /* left-side-bar-hamburger@2x.png */,
+				54A550CA1BB138A60000561B /* left-side-bar-hamburger@3x.png */,
+				B1E2440B1BB40A1700878E7A /* buddycopy.png */,
+				B1EDDECA1BB10A4100518E0C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1EDDEE01BB10C5200518E0C /* Side Menu */ = {
+			isa = PBXGroup;
+			children = (
+				B1EDDEE11BB10C6400518E0C /* RECommonFunctions.h */,
+				B1EDDEE21BB10C6400518E0C /* RECommonFunctions.m */,
+				B1EDDEE31BB10C6400518E0C /* RESideMenu.h */,
+				B1EDDEE41BB10C6400518E0C /* RESideMenu.m */,
+				B1EDDEE51BB10C6400518E0C /* UIViewController+RESideMenu.h */,
+				B1EDDEE61BB10C6400518E0C /* UIViewController+RESideMenu.m */,
+			);
+			name = "Side Menu";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1EDDEC51BB10A4000518E0C /* GoIbibo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1EDDEDD1BB10A4100518E0C /* Build configuration list for PBXNativeTarget "GoIbibo" */;
+			buildPhases = (
+				3D49D59F52ED2FA745D8FD8A /* Check Pods Manifest.lock */,
+				B1EDDEC21BB10A4000518E0C /* Sources */,
+				B1EDDEC31BB10A4000518E0C /* Frameworks */,
+				B1EDDEC41BB10A4000518E0C /* Resources */,
+				B1EDDEEC1BB1116600518E0C /* ShellScript */,
+				A070B3AFF7E9064F42E5DF2F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoIbibo;
+			productName = GoIbibo;
+			productReference = B1EDDEC61BB10A4000518E0C /* GoIbibo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1EDDEBE1BB10A4000518E0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Vijay;
+				TargetAttributes = {
+					B1EDDEC51BB10A4000518E0C = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = B1EDDEC11BB10A4000518E0C /* Build configuration list for PBXProject "GoIbibo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1EDDEBD1BB10A4000518E0C;
+			productRefGroup = B1EDDEC71BB10A4000518E0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1EDDEC51BB10A4000518E0C /* GoIbibo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1EDDEC41BB10A4000518E0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				547A05D21BB3DC260079F1CC /* background-blurred.jpg in Resources */,
+				54A550D61BB148480000561B /* GoSettingsViewController.xib in Resources */,
+				54A8CD111BB315F70091B02A /* calendar.png in Resources */,
+				547A05DE1BB3FBB90079F1CC /* searchButtonBackground.png in Resources */,
+				54A550F91BB160370000561B /* IconProfile@2x.png in Resources */,
+				546DE98A1BB6B999005E5A8F /* GoSeatSeletionHeaderView.xib in Resources */,
+				B191BED41BB3501500838839 /* GoPaymentConfirmation.xib in Resources */,
+				5427F3261BB28AB900410622 /* SrcDest.png in Resources */,
+				B1EDDEF31BB1118200518E0C /* DigitsKitResources.bundle in Resources */,
+				54A550FA1BB160370000561B /* IconSettings@2x.png in Resources */,
+				B1EDDED91BB10A4100518E0C /* LaunchScreen.storyboard in Resources */,
+				547A06391BB41C7F0079F1CC /* Teal Collaboration Icon.png in Resources */,
+				B10ECC981BB33E7900B19D66 /* GoSeatCollectionViewCell.xib in Resources */,
+				54A550CB1BB138A60000561B /* left-side-bar-hamburger@2x.png in Resources */,
+				B1EE44C11BB6F77100B47C8F /* IMG_1042.PNG in Resources */,
+				B1E2440C1BB40A1700878E7A /* buddycopy.png in Resources */,
+				547A06291BB401F90079F1CC /* StartLocation.png in Resources */,
+				B1EDDEEB1BB10D9A00518E0C /* GoHomeViewController.xib in Resources */,
+				B1EA1FCE1BB2AA9E00A6B580 /* GoBusInfoCell.xib in Resources */,
+				B10D989F1BB24E97005D74D1 /* GoBusListViewController.xib in Resources */,
+				5458A8E51BB65F82008D9ED5 /* availableSeat.png in Resources */,
+				B1EDDED61BB10A4100518E0C /* Assets.xcassets in Resources */,
+				547A05D81BB3EF3F0079F1CC /* background.png in Resources */,
+				5458A8E81BB686AA008D9ED5 /* buddySeat.png in Resources */,
+				54C4B2041BB3C09500110592 /* GoSearchPlaceViewController.xib in Resources */,
+				54A550CC1BB138A60000561B /* left-side-bar-hamburger@3x.png in Resources */,
+				B151F6811BB32D590017D908 /* contacts.plist in Resources */,
+				5458A8E61BB65F82008D9ED5 /* bookedSeat.png in Resources */,
+				547A06281BB401F90079F1CC /* EndLocation.png in Resources */,
+				546DE9881BB6B6C9005E5A8F /* Checkmark@2x.png in Resources */,
+				B151F6861BB335750017D908 /* GoSeatMetrixViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D49D59F52ED2FA745D8FD8A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A070B3AFF7E9064F42E5DF2F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1EDDEEC1BB1116600518E0C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run a158ed92adc33849add174bc6f7fb20fc8ba2fa6 60ebe5f7c0afae81320b2d59dccc1285dfe88b14eb75d9e775447f0487921899";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1EDDEC21BB10A4000518E0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1EA1FEE1BB2F1BA00A6B580 /* GoUserModelManager.m in Sources */,
+				B1EDDEFB1BB14CBE00518E0C /* GoContactSyncEntry.m in Sources */,
+				546DE9861BB6ACEE005E5A8F /* MBProgressHUD.m in Sources */,
+				B1EDDED11BB10A4100518E0C /* GoHomeViewController.m in Sources */,
+				B10ECC9B1BB342F800B19D66 /* GoBusSeatLayout.m in Sources */,
+				54A550D51BB148480000561B /* GoSettingsViewController.m in Sources */,
+				B151F6841BB3353B0017D908 /* GoSeatMetrixViewController.m in Sources */,
+				54A550EC1BB154060000561B /* GoSettingsOption.m in Sources */,
+				B1EA1FEB1BB2F00600A6B580 /* GoUser.m in Sources */,
+				B1EDDECE1BB10A4100518E0C /* AppDelegate.m in Sources */,
+				B191BED31BB3501500838839 /* GoPaymentConfirmation.m in Sources */,
+				B10ECC971BB33E7900B19D66 /* GoSeatCollectionViewCell.m in Sources */,
+				B1EDDECB1BB10A4100518E0C /* main.m in Sources */,
+				54C4B2031BB3C09500110592 /* GoSearchPlaceViewController.m in Sources */,
+				B1EA1FCD1BB2AA9E00A6B580 /* GoBusInfoCell.m in Sources */,
+				546DE98D1BB6BC45005E5A8F /* GoSeatSeletionHeaderView.m in Sources */,
+				B1EDDEF81BB14C9D00518E0C /* GoContactSync.m in Sources */,
+				B10D989E1BB24E97005D74D1 /* GoBusListViewController.m in Sources */,
+				B1EDDEE81BB10C6400518E0C /* RESideMenu.m in Sources */,
+				B1EDDEE71BB10C6400518E0C /* RECommonFunctions.m in Sources */,
+				B1EA1FC91BB276EB00A6B580 /* GoBusDetails.m in Sources */,
+				54A550DC1BB14A570000561B /* GoLayoutHandler.m in Sources */,
+				B1EDDEE91BB10C6400518E0C /* UIViewController+RESideMenu.m in Sources */,
+				B151F67B1BB31E360017D908 /* GoBookedBusDetail.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B1EDDED71BB10A4100518E0C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1EDDED81BB10A4100518E0C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1EDDEDB1BB10A4100518E0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1EDDEDC1BB10A4100518E0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1EDDEDE1BB10A4100518E0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DB25A0CFB6305D6FF431522 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GoIbibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vijay.-GoIbibo.GoIbibo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B1EDDEDF1BB10A4100518E0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B40DDF3B0D3DBC6051BC67C8 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GoIbibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vijay.-GoIbibo.GoIbibo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1EDDEC11BB10A4000518E0C /* Build configuration list for PBXProject "GoIbibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1EDDEDB1BB10A4100518E0C /* Debug */,
+				B1EDDEDC1BB10A4100518E0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1EDDEDD1BB10A4100518E0C /* Build configuration list for PBXNativeTarget "GoIbibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1EDDEDE1BB10A4100518E0C /* Debug */,
+				B1EDDEDF1BB10A4100518E0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1EDDEBE1BB10A4000518E0C /* Project object */;
+}

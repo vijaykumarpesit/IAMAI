@@ -1,0 +1,45 @@
+PODS:
+  - AFNetworking (2.6.0):
+    - AFNetworking/NSURLConnection (= 2.6.0)
+    - AFNetworking/NSURLSession (= 2.6.0)
+    - AFNetworking/Reachability (= 2.6.0)
+    - AFNetworking/Security (= 2.6.0)
+    - AFNetworking/Serialization (= 2.6.0)
+    - AFNetworking/UIKit (= 2.6.0)
+  - AFNetworking/NSURLConnection (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.0)
+  - AFNetworking/Security (2.6.0)
+  - AFNetworking/Serialization (2.6.0)
+  - AFNetworking/UIKit (2.6.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Bolts/Tasks (1.2.2)
+  - CardIO (5.1.1)
+  - JTCalendar (2.1.4)
+  - KVNProgress (2.2.1)
+  - Parse (1.8.5):
+    - Bolts/Tasks (>= 1.2.2)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.5)
+  - CardIO
+  - JTCalendar (~> 2.0)
+  - KVNProgress
+  - Parse
+
+SPEC CHECKSUMS:
+  AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  Bolts: 20a2bd788273360cb1e31530dc19b8544eef2544
+  CardIO: 2c3a8ef9b9add4bd664c83bb653b83b2f32d9d7f
+  JTCalendar: 9b1352c7ec41cc26b19c189d6608ba48060a53d9
+  KVNProgress: 7001d2d16a2755cee5599e8e485befe056f2197b
+  Parse: 17ad8e0677ed682f7f00503860fcda0f4eb74168
+
+COCOAPODS: 0.38.2

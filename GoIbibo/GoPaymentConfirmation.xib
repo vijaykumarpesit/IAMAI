@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9046" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GoPaymentConfirmation">
+            <connections>
+                <outlet property="netBanking" destination="nee-XE-Cei" id="R4N-El-qEL"/>
+                <outlet property="scanCardImageView" destination="KD3-uX-HGj" id="fCv-cF-0UU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wallets" destination="IUK-AU-Yba" id="IeO-3N-lxy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_1042.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="3xx-3v-elM">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <animations/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSd-eL-vIH">
+                    <rect key="frame" x="207" y="114" width="186" height="28"/>
+                    <animations/>
+                    <attributedString key="attributedText">
+                        <fragment content="Payment Options">
+                            <attributes>
+                                <color key="NSColor" red="0.14901960784313725" green="0.3843137254901961" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="24" name="HelveticaNeue"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="searchButtonBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="KD3-uX-HGj">
+                    <rect key="frame" x="150" y="206" width="300" height="40"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="iSV-G5-jmO"/>
+                        <constraint firstAttribute="width" constant="300" id="k7s-5z-xLP"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan Card" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2k-rf-66s">
+                    <rect key="frame" x="260" y="215" width="80.5" height="20"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="searchButtonBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="nee-XE-Cei">
+                    <rect key="frame" x="150" y="296" width="300" height="40"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="b1j-nm-2bB"/>
+                        <constraint firstAttribute="height" constant="40" id="lYv-Dp-7MD"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Net Banking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPr-Ck-Fv2">
+                    <rect key="frame" x="253" y="304" width="94" height="20"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="searchButtonBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="IUK-AU-Yba">
+                    <rect key="frame" x="150" y="386" width="300" height="40"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="Qy5-Cl-2I2"/>
+                        <constraint firstAttribute="height" constant="40" id="eLb-D1-Y8m"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qL-QI-Mp7">
+                    <rect key="frame" x="278" y="395" width="55.5" height="20.5"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3xx-3v-elM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1ar-W9-fYj"/>
+                <constraint firstItem="3qL-QI-Mp7" firstAttribute="top" secondItem="nee-XE-Cei" secondAttribute="bottom" constant="59" id="4v8-yd-C4R"/>
+                <constraint firstItem="d2k-rf-66s" firstAttribute="top" secondItem="aSd-eL-vIH" secondAttribute="bottom" constant="73" id="Gjn-nd-VMg"/>
+                <constraint firstItem="3xx-3v-elM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KFC-Mo-VfX"/>
+                <constraint firstItem="KD3-uX-HGj" firstAttribute="top" secondItem="aSd-eL-vIH" secondAttribute="bottom" constant="64" id="NBt-wg-CTz"/>
+                <constraint firstItem="IUK-AU-Yba" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PC9-e0-EkE"/>
+                <constraint firstItem="aSd-eL-vIH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Sp1-8f-HKi"/>
+                <constraint firstItem="IUK-AU-Yba" firstAttribute="top" secondItem="nee-XE-Cei" secondAttribute="bottom" constant="50" id="UaH-YT-st9"/>
+                <constraint firstAttribute="trailing" secondItem="3xx-3v-elM" secondAttribute="trailing" id="XMC-dP-RHR"/>
+                <constraint firstItem="3qL-QI-Mp7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="5.75" id="c2C-HG-fj6"/>
+                <constraint firstItem="nee-XE-Cei" firstAttribute="top" secondItem="KD3-uX-HGj" secondAttribute="bottom" constant="50" id="dca-ej-YKp"/>
+                <constraint firstItem="KD3-uX-HGj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="h22-2N-RWx"/>
+                <constraint firstItem="XPr-Ck-Fv2" firstAttribute="top" secondItem="KD3-uX-HGj" secondAttribute="bottom" constant="58" id="hNe-sP-Kfw"/>
+                <constraint firstItem="aSd-eL-vIH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="114" id="pFw-4V-U61"/>
+                <constraint firstItem="nee-XE-Cei" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rJK-M5-l0f"/>
+                <constraint firstItem="d2k-rf-66s" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sk2-lE-Dpr"/>
+                <constraint firstItem="XPr-Ck-Fv2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uAm-5H-nG8"/>
+                <constraint firstAttribute="bottom" secondItem="3xx-3v-elM" secondAttribute="bottom" id="xjK-qy-pLH"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="IMG_1042.PNG" width="640" height="1136"/>
+        <image name="searchButtonBackground.png" width="300" height="40"/>
+    </resources>
+</document>

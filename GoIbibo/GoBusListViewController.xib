@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9046" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GoBusListViewController">
+            <connections>
+                <outlet property="searchingView" destination="u7e-p9-BXO" id="JLm-AN-JYy"/>
+                <outlet property="tableView" destination="qh9-6z-QgX" id="PYx-4K-b3I"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_1042.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="snG-zY-uuk">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <animations/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="qh9-6z-QgX">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="esn-ro-koc"/>
+                        <outlet property="delegate" destination="-1" id="KPi-2r-AmV"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u7e-p9-BXO">
+                    <rect key="frame" x="226" y="277" width="148.5" height="46"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="dgh-aA-m3o">
+                            <rect key="frame" x="0.0" y="4" width="37" height="37"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="37" id="3S1-3X-tbx"/>
+                            </constraints>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Searching...." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bd5-Hm-8U6">
+                            <rect key="frame" x="45" y="8" width="95.5" height="30"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Bd5-Hm-8U6" secondAttribute="trailing" constant="8" id="EII-v7-qLD"/>
+                        <constraint firstAttribute="bottom" secondItem="Bd5-Hm-8U6" secondAttribute="bottom" constant="8" id="TgL-DK-vP8"/>
+                        <constraint firstItem="Bd5-Hm-8U6" firstAttribute="top" secondItem="u7e-p9-BXO" secondAttribute="top" constant="8" id="UBd-Xr-zsF"/>
+                        <constraint firstItem="dgh-aA-m3o" firstAttribute="top" secondItem="u7e-p9-BXO" secondAttribute="top" constant="4" id="UY6-yf-Qrg"/>
+                        <constraint firstAttribute="bottom" secondItem="dgh-aA-m3o" secondAttribute="bottom" constant="5" id="Yq8-fu-MaU"/>
+                        <constraint firstItem="dgh-aA-m3o" firstAttribute="leading" secondItem="u7e-p9-BXO" secondAttribute="leading" id="dYZ-8j-LTF"/>
+                        <constraint firstItem="Bd5-Hm-8U6" firstAttribute="leading" secondItem="dgh-aA-m3o" secondAttribute="trailing" constant="8" id="p3G-Z8-UsF"/>
+                        <constraint firstAttribute="height" constant="46" id="v8M-9J-UxK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="snG-zY-uuk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AJB-YA-npc"/>
+                <constraint firstAttribute="bottom" secondItem="qh9-6z-QgX" secondAttribute="bottom" id="E21-wd-eat"/>
+                <constraint firstItem="qh9-6z-QgX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Iun-M2-fNO"/>
+                <constraint firstAttribute="trailing" secondItem="snG-zY-uuk" secondAttribute="trailing" id="L5h-hs-NN7"/>
+                <constraint firstItem="u7e-p9-BXO" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="PD4-4M-Qra"/>
+                <constraint firstItem="qh9-6z-QgX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="PY0-uk-Lsz"/>
+                <constraint firstAttribute="trailing" secondItem="qh9-6z-QgX" secondAttribute="trailing" id="Yln-cr-tfh"/>
+                <constraint firstAttribute="bottom" secondItem="snG-zY-uuk" secondAttribute="bottom" id="l4j-R1-Oxt"/>
+                <constraint firstItem="u7e-p9-BXO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mtq-vA-wT4"/>
+                <constraint firstItem="snG-zY-uuk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tOW-BQ-USV"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="IMG_1042.PNG" width="640" height="1136"/>
+    </resources>
+</document>
