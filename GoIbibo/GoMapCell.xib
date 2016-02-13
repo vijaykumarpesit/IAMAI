@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="GoMapCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4eR-Gu-rtO">
+                        <rect key="frame" x="8" y="0.0" width="304" height="38"/>
+                        <color key="backgroundColor" red="0.39215686274509803" green="0.69411764705882351" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lKK-vg-iAe">
+                        <rect key="frame" x="8" y="38" width="304" height="33.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </mapView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNp-nx-6nd">
+                        <rect key="frame" x="38" y="5" width="49" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maM-zG-UYC">
+                        <rect key="frame" x="241" y="5" width="49" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="lKK-vg-iAe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="30" id="57H-Gk-Y7R"/>
+                    <constraint firstAttribute="trailing" secondItem="maM-zG-UYC" secondAttribute="trailing" constant="30" id="CGJ-Rl-VSw"/>
+                    <constraint firstItem="yNp-nx-6nd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="30" id="FXG-Bw-Q54"/>
+                    <constraint firstItem="lKK-vg-iAe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Hht-xA-vZb"/>
+                    <constraint firstItem="lKK-vg-iAe" firstAttribute="top" secondItem="4eR-Gu-rtO" secondAttribute="bottom" id="MPq-5c-3B9"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="4eR-Gu-rtO" secondAttribute="trailing" id="avs-w0-W6w"/>
+                    <constraint firstAttribute="top" secondItem="yNp-nx-6nd" secondAttribute="top" constant="-5" id="b0e-5q-Z6V"/>
+                    <constraint firstItem="maM-zG-UYC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="dfv-lC-Wad"/>
+                    <constraint firstItem="yNp-nx-6nd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="eVq-te-cbL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="lKK-vg-iAe" secondAttribute="bottom" id="fvE-kl-TWH"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="lKK-vg-iAe" secondAttribute="trailing" id="gUK-lO-NR2"/>
+                    <constraint firstItem="4eR-Gu-rtO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="oiM-VT-8eY"/>
+                    <constraint firstItem="4eR-Gu-rtO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yWa-hZ-SSP"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="eVq-te-cbL"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="mapView" destination="lKK-vg-iAe" id="eyH-Om-aEY"/>
+                <outlet property="optionLabel" destination="yNp-nx-6nd" id="KkP-9o-GSA"/>
+                <outlet property="optionValueLabel" destination="maM-zG-UYC" id="Xic-PC-3fy"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

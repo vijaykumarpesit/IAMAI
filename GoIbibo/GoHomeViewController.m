@@ -12,8 +12,10 @@
 #import "GoUserModelManager.h"
 #import "GoUser.h"
 #import "GoSearchPlaceViewController.h"
+#import "GoIbibo-swift.h"
+#import "GoMapCell.h"
 
-@interface GoHomeViewController ()
+@interface GoHomeViewController () <MKMapViewDelegate,CLLocationManagerDelegate>
 
 @property (nonatomic, strong) NSMutableDictionary *eventsByDate;
 @property (nonatomic, strong) NSDate *todayDate;
@@ -24,6 +26,10 @@
 @property (weak, nonatomic) IBOutlet UIView *sourceView;
 @property (weak, nonatomic) IBOutlet UIView *destinationView;
 @property (weak, nonatomic) IBOutlet UILabel *searchBusesLabel;
+@property (weak, nonatomic) IBOutlet IGSwitch *typeSelectionSwitch;
+@property (weak, nonatomic) IBOutlet UITableView *optionTableView;
+@property (strong, nonatomic) CLLocationManager *locationManager;
+
 
 @end
 
@@ -37,6 +43,9 @@
     _calendarManager = [JTCalendarManager new];
     _calendarManager.delegate = self;
     
+    [self.optionTableView registerNib:[UINib nibWithNibName:@"GoMapCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"cellID"];
+
+    
     // Generate random events sort by date using a dateformatter for the demonstration
     [self createRandomEvents];
     
@@ -47,7 +56,6 @@
     [_calendarManager setContentView:_calendarContentView];
     [_calendarManager setDate:_todayDate];
 
-    [self didChangeModeTouch];
     
     [self configureAndAddTapGestureToView:self.sourceView andSelector:@selector(sourceViewTapped:)];
     self.sourceView.userInteractionEnabled = YES;
@@ -55,6 +63,22 @@
     self.destinationView.userInteractionEnabled = YES;
     [self configureAndAddTapGestureToView:self.searchBusesLabel andSelector:@selector(searchBusesLabelTapped:)];
     self.searchBusesLabel.userInteractionEnabled = YES;
+    
+    [self didChangeModeTouch];
+    
+    
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    [self.locationManager requestAlwaysAuthorization];
+    
+    self.typeSelectionSwitch.titleLeft = @"Long Journey";
+    self.typeSelectionSwitch.titleRight = @"Short Journey";
+    self.typeSelectionSwitch.cornerRadius = 0.0f;
+    self.typeSelectionSwitch.font = [UIFont fontWithName:@"HelveticaNeue" size:20];
+    self.typeSelectionSwitch.sliderColor = [UIColor colorWithRed:100/255.0 green:177/255.0 blue:185/255.0 alpha:1.0];
+    self.typeSelectionSwitch.textColorFront = [UIColor whiteColor];
+    self.typeSelectionSwitch.textColorBack = [UIColor blackColor];
+
 }
 
 - (void)configureAndAddTapGestureToView:(UIView *)view andSelector:(SEL)selector {
@@ -63,6 +87,7 @@
     tapGestureRecognizer.numberOfTouchesRequired = 1;
     [view addGestureRecognizer:tapGestureRecognizer];
 }
+
 
 #pragma mark - Buttons callback
 
@@ -302,5 +327,41 @@
     user.userID = aSession.userID;
     [user saveUser];
 }
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 2;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return  1;
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return  150.0f;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    GoMapCell *mapCell = [tableView dequeueReusableCellWithIdentifier:@"cellID" forIndexPath:indexPath];
+    
+    
+    //Takes a center point and a span in miles (converted from meters using above method)
+    MKCoordinateRegion region = { {0.0, 0.0 }, { 0.0, 0.0 } };
+    region.center.latitude = 22.569722 ;
+    region.center.longitude = 88.369722;
+    region.span.longitudeDelta = 0.01f;
+    region.span.latitudeDelta = 0.01f;
+    [mapCell.mapView setMapType:MKMapTypeStandard];
+    [mapCell.mapView setZoomEnabled:YES];
+    [mapCell.mapView setScrollEnabled:YES];
+    [mapCell.mapView setRegion:region animated:YES];
+    [mapCell.mapView setScrollEnabled:NO];
+    [mapCell setNeedsDisplay];
+    return mapCell;
+}
+
+
 
 @end

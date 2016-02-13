@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>LocationPickerView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Parse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0CA9D47A02CF5A5B007E6FA5DBB3C661</key>
+		<key>06B2232CE73059846F04E5C3DFEE0D38</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3C39ED29550E63DF9DAEA135A19C1810</key>
+		<key>1923D3614BAAB0EBF81EEC04BD369BF0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>53D59546F2D63F3117578DD778DFC33D</key>
+		<key>3C40AD938D23DF5F8345D23B4D3E1644</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9CC2955A80A1341A64C7C497FE5F5F1E</key>
+		<key>410B25DF16EA5C5B3E2698F74F9625FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B82A5179C7D3BC70919C92D259B1CC43</key>
+		<key>51AFBF55CB3B8CEAC03B9AE8CAF0B22B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BF774F01553D5A0DC206B01E0270F67A</key>
+		<key>C3AD7E342840A1BEA026D1D3A2D9C1A7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F77D7B74B084AE7382BAE977A629B6C5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

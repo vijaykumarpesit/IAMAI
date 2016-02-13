@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '6995F6840840627AB615F571'
-               BlueprintName = 'Bolts'
+               BlueprintIdentifier = '789B491C894AA05A3ADC75F3'
+               BlueprintName = 'LocationPickerView'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libBolts.a'>
+               BuildableName = 'libLocationPickerView.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

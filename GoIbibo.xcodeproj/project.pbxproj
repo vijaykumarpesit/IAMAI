@@ -38,6 +38,10 @@
 		B10ECC971BB33E7900B19D66 /* GoSeatCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B10ECC951BB33E7900B19D66 /* GoSeatCollectionViewCell.m */; };
 		B10ECC981BB33E7900B19D66 /* GoSeatCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B10ECC961BB33E7900B19D66 /* GoSeatCollectionViewCell.xib */; };
 		B10ECC9B1BB342F800B19D66 /* GoBusSeatLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B10ECC9A1BB342F800B19D66 /* GoBusSeatLayout.m */; };
+		B126EA9A1C6F0934002D14F0 /* IGSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126EA991C6F0934002D14F0 /* IGSwitch.swift */; };
+		B126EA9E1C6F16E6002D14F0 /* GoMapCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B126EA9C1C6F16E6002D14F0 /* GoMapCell.m */; };
+		B126EA9F1C6F16E6002D14F0 /* GoMapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B126EA9D1C6F16E6002D14F0 /* GoMapCell.xib */; };
+		B126EAA11C6F21A9002D14F0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B126EAA01C6F21A9002D14F0 /* MapKit.framework */; };
 		B151F67B1BB31E360017D908 /* GoBookedBusDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = B151F67A1BB31E360017D908 /* GoBookedBusDetail.m */; };
 		B151F6811BB32D590017D908 /* contacts.plist in Resources */ = {isa = PBXBuildFile; fileRef = B151F6801BB32D590017D908 /* contacts.plist */; };
 		B151F6841BB3353B0017D908 /* GoSeatMetrixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B151F6831BB3353B0017D908 /* GoSeatMetrixViewController.m */; };
@@ -120,6 +124,12 @@
 		B10ECC961BB33E7900B19D66 /* GoSeatCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoSeatCollectionViewCell.xib; sourceTree = "<group>"; };
 		B10ECC991BB342F800B19D66 /* GoBusSeatLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoBusSeatLayout.h; sourceTree = "<group>"; };
 		B10ECC9A1BB342F800B19D66 /* GoBusSeatLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoBusSeatLayout.m; sourceTree = "<group>"; };
+		B126EA981C6F0934002D14F0 /* GoIbibo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoIbibo-Bridging-Header.h"; sourceTree = "<group>"; };
+		B126EA991C6F0934002D14F0 /* IGSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGSwitch.swift; sourceTree = "<group>"; };
+		B126EA9B1C6F16E6002D14F0 /* GoMapCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoMapCell.h; sourceTree = "<group>"; };
+		B126EA9C1C6F16E6002D14F0 /* GoMapCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoMapCell.m; sourceTree = "<group>"; };
+		B126EA9D1C6F16E6002D14F0 /* GoMapCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoMapCell.xib; sourceTree = "<group>"; };
+		B126EAA01C6F21A9002D14F0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B151F6791BB31E360017D908 /* GoBookedBusDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoBookedBusDetail.h; sourceTree = "<group>"; };
 		B151F67A1BB31E360017D908 /* GoBookedBusDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoBookedBusDetail.m; sourceTree = "<group>"; };
 		B151F6801BB32D590017D908 /* contacts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = contacts.plist; sourceTree = "<group>"; };
@@ -182,6 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B126EAA11C6F21A9002D14F0 /* MapKit.framework in Frameworks */,
 				B1EA1FE71BB2CEF400A6B580 /* libsqlite3.tbd in Frameworks */,
 				B1EA1FE51BB2CEEB00A6B580 /* libz.tbd in Frameworks */,
 				B1EA1FE31BB2CED300A6B580 /* SystemConfiguration.framework in Frameworks */,
@@ -205,6 +216,7 @@
 		68BADB109A9B047185A2BEDA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B126EAA01C6F21A9002D14F0 /* MapKit.framework */,
 				B1EA1FE61BB2CEF400A6B580 /* libsqlite3.tbd */,
 				B1EA1FE41BB2CEEB00A6B580 /* libz.tbd */,
 				B1EA1FE21BB2CED300A6B580 /* SystemConfiguration.framework */,
@@ -227,6 +239,15 @@
 				B40DDF3B0D3DBC6051BC67C8 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B126EA971C6F091C002D14F0 /* IGSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				B126EA991C6F0934002D14F0 /* IGSwitch.swift */,
+				B126EA981C6F0934002D14F0 /* GoIbibo-Bridging-Header.h */,
+			);
+			name = IGSwitch;
 			sourceTree = "<group>";
 		};
 		B1EA1FC61BB276CF00A6B580 /* Model */ = {
@@ -260,6 +281,9 @@
 				546DE9891BB6B999005E5A8F /* GoSeatSeletionHeaderView.xib */,
 				546DE98B1BB6BC45005E5A8F /* GoSeatSeletionHeaderView.h */,
 				546DE98C1BB6BC45005E5A8F /* GoSeatSeletionHeaderView.m */,
+				B126EA9B1C6F16E6002D14F0 /* GoMapCell.h */,
+				B126EA9C1C6F16E6002D14F0 /* GoMapCell.m */,
+				B126EA9D1C6F16E6002D14F0 /* GoMapCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -303,6 +327,7 @@
 		B1EDDEBD1BB10A4000518E0C = {
 			isa = PBXGroup;
 			children = (
+				B126EA971C6F091C002D14F0 /* IGSwitch */,
 				B1EDDEC81BB10A4000518E0C /* GoIbibo */,
 				B1EDDEC71BB10A4000518E0C /* Products */,
 				9C1B89E0C6CDCA4125109D79 /* Pods */,
@@ -397,6 +422,7 @@
 				B1EDDEC41BB10A4000518E0C /* Resources */,
 				B1EDDEEC1BB1116600518E0C /* ShellScript */,
 				A070B3AFF7E9064F42E5DF2F /* Copy Pods Resources */,
+				FD2B3F3FF9EE06BA08B35735 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -413,6 +439,7 @@
 		B1EDDEBE1BB10A4000518E0C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Vijay;
 				TargetAttributes = {
@@ -462,6 +489,7 @@
 				B1E2440C1BB40A1700878E7A /* buddycopy.png in Resources */,
 				547A06291BB401F90079F1CC /* StartLocation.png in Resources */,
 				B1EDDEEB1BB10D9A00518E0C /* GoHomeViewController.xib in Resources */,
+				B126EA9F1C6F16E6002D14F0 /* GoMapCell.xib in Resources */,
 				B1EA1FCE1BB2AA9E00A6B580 /* GoBusInfoCell.xib in Resources */,
 				B10D989F1BB24E97005D74D1 /* GoBusListViewController.xib in Resources */,
 				5458A8E51BB65F82008D9ED5 /* availableSeat.png in Resources */,
@@ -524,6 +552,21 @@
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run a158ed92adc33849add174bc6f7fb20fc8ba2fa6 60ebe5f7c0afae81320b2d59dccc1285dfe88b14eb75d9e775447f0487921899";
 		};
+		FD2B3F3FF9EE06BA08B35735 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -537,11 +580,13 @@
 				B1EDDED11BB10A4100518E0C /* GoHomeViewController.m in Sources */,
 				B10ECC9B1BB342F800B19D66 /* GoBusSeatLayout.m in Sources */,
 				54A550D51BB148480000561B /* GoSettingsViewController.m in Sources */,
+				B126EA9A1C6F0934002D14F0 /* IGSwitch.swift in Sources */,
 				B151F6841BB3353B0017D908 /* GoSeatMetrixViewController.m in Sources */,
 				54A550EC1BB154060000561B /* GoSettingsOption.m in Sources */,
 				B1EA1FEB1BB2F00600A6B580 /* GoUser.m in Sources */,
 				B1EDDECE1BB10A4100518E0C /* AppDelegate.m in Sources */,
 				B191BED31BB3501500838839 /* GoPaymentConfirmation.m in Sources */,
+				B126EA9E1C6F16E6002D14F0 /* GoMapCell.m in Sources */,
 				B10ECC971BB33E7900B19D66 /* GoSeatCollectionViewCell.m in Sources */,
 				B1EDDECB1BB10A4100518E0C /* main.m in Sources */,
 				54C4B2031BB3C09500110592 /* GoSearchPlaceViewController.m in Sources */,
@@ -659,6 +704,7 @@
 			baseConfigurationReference = 3DB25A0CFB6305D6FF431522 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -669,6 +715,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vijay.-GoIbibo.GoIbibo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GoIbibo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -677,6 +725,7 @@
 			baseConfigurationReference = B40DDF3B0D3DBC6051BC67C8 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -687,6 +736,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vijay.-GoIbibo.GoIbibo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GoIbibo-Bridging-Header.h";
 			};
 			name = Release;
 		};
